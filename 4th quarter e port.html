@@ -8,6 +8,20 @@
          background-image:url('fnaf.gif');
          }
     </style>
+    <script>
+        window.onload = function() {
+            let name = prompt("Enter your name:");
+            let birthday = prompt("Enter your birthday (YYYY-MM-DD):");
+            let sexuality = prompt("Enter your sexuality:");
+            let hobby = prompt("Enter your hobby:");
+            
+            if (!name || !birthday || !sexuality || !hobby) {
+                document.body.innerHTML = "<img src='jumpscare.gif' style='width: 100vw; height: 100vh; object-fit: cover;'>";
+            } else {
+                alert("Welcome, " + name + "! Enjoy your visit.");
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
